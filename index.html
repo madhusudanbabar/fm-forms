@@ -14,6 +14,8 @@
 </head>
 <body>
 
+  <div class="container">
+
   <div class="form">
     <div class="form__text-group">
       <h1 class="form__heading">
@@ -30,14 +32,14 @@
         Try it free 7 days <span class="form__small-text"> then $20/mo. thereafter </span>
       </h3>
 
-      <form class="form__input-group">
+      <form class="form__input-group" id="form">
 
-        <input aria-label="first name" type="text" name="name" id="name" class="form__input" placeholder=" First Name">
-        <input aria-label="last name" type="text" name="name" id="surname" class="form__input" placeholder=" Last Name">
-        <input aria-label="email" type="email" name="name" id="email" class="form__input" placeholder="Email Address">
-        <input aria-label="password" type="password" name="password" id="password" class="form__input" placeholder="  Password">
+        <input aria-label="first name" type="text" name="name" id="first_name" class="form__input" placeholder=" First Name" required>
+        <input aria-label="last name" type="text" name="name" id="last_name" class="form__input" placeholder=" Last Name" required>
+        <input aria-label="email" type="email" name="name" id="email" class="form__input" placeholder="Email Address" required>
+        <input aria-label="password" type="password" name="password" id="password" class="form__input" placeholder="  Password" required>
 
-        <button type="submit" class="form__cta">
+        <button type="submit" class="form__cta" id="submit-btn">
           Claim your free trial 
         </button>
 
@@ -52,7 +54,7 @@
   
 
 
-  
+</div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1" target="_blank">Frontend Mentor</a>. 
@@ -60,4 +62,5 @@
     </p>
   </footer>
 </body>
+<script src="./app.js"></script>
 </html>

@@ -44,12 +44,14 @@ body {
   background: var(--red) url("./images/bg-intro-mobile.png");
   font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
   @include respond(tab-land){
-      background: var(--red) url("./images/bg-intro-desktop.png");
-      background-size: cover;
+    background: var(--red) url("./images/bg-intro-desktop.png");
+    background-size: cover;
+    // flex-direction: row;
   }
 }
 
