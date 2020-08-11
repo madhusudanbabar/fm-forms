@@ -110,13 +110,13 @@ body {
 @media screen and (min-width: 56.5em) {
   .form__info {
     line-height: 1.5;
-    font-size: .8rem;
+    font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.85);
   }
 }
 
 .form__heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
   font-family: "Poppins", sans-serif;
@@ -124,7 +124,7 @@ body {
 
 @media screen and (min-width: 56.5em) {
   .form__heading {
-    font-size: 2.275rem;
+    font-size: 3rem;
     line-height: 1;
     margin-bottom: 1.5rem;
   }
@@ -162,12 +162,6 @@ body {
           box-shadow: 0 0.325rem 0rem 0rem rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 56.5em) {
-  .form__offer {
-    font-size: .7rem;
-  }
-}
-
 .form__small-text {
   font-weight: 200;
 }
@@ -198,15 +192,17 @@ body {
 
 .form__input {
   padding: 1rem;
-  margin-bottom: 1rem;
-  border: solid 0.5px var(--gray-blue);
+  border: solid 1px var(--gray-blue);
   border-radius: 0.25rem;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 56.5em) {
   .form__input {
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
   }
 }
 
@@ -228,6 +224,15 @@ body {
 .form__input::placeholder {
   font-weight: 600;
   font-size: 0.7rem;
+}
+
+.form__error {
+  text-align: right;
+  margin-bottom: .75rem;
+  font-size: 0.7rem;
+  padding: .5rem 1rem;
+  color: var(--red);
+  display: none;
 }
 
 .form__cta {
@@ -268,7 +273,6 @@ body {
 @media screen and (min-width: 56.5em) {
   .form__notice {
     width: 100%;
-    font-size: .55rem;
   }
 }
 
@@ -278,6 +282,9 @@ body {
 }
 
 .attribution {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
   font-size: 0.85rem;
   text-align: center;
   color: white;
@@ -285,5 +292,29 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+
+.error {
+  background-image: url("./images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 5%;
+  border: solid 2px var(--red);
+  margin-bottom: 0;
+}
+
+.error + span {
+  display: unset;
 }
 /*# sourceMappingURL=style.css.map */
